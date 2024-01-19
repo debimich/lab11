@@ -1,0 +1,2 @@
+class SqrtDb < ApplicationRecord
+end

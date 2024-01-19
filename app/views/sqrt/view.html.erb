@@ -1,0 +1,15 @@
+<table border="1">
+  <tr>
+    <th>Итерация</th>
+    <th>Результат вычисления</th>
+  </tr>
+
+  <% @guesses.each_with_index do |guess, index| %>
+    <tr>
+      <td><%= index == 0 ? "Ввод" : index %></td>
+      <td><%= index == 0 ? @a : guess %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to "Повторить вычисления", :sqrt_input%>

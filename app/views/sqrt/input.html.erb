@@ -1,0 +1,9 @@
+<%= form_tag("/sqrt/view", :method => "get") do %>
+	<%= label_tag("Введите число:") %>
+	<%= text_field_tag(:v) %> <br/>
+	<select class="custom-select" name = "side">
+      <option value = "count">Посчитать корень</option>
+      <option value = "DB">Вывести БД</option>
+    </select> <br/>
+	<%= submit_tag("Выполнить") %>
+<% end %>
